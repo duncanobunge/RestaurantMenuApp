@@ -1,0 +1,98 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <style>
+        .dropdown-submenu {
+            position: relative;
+        }
+
+            .dropdown-submenu .dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-top: -1px;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Restaurant Menu App</h2>
+        <p>Click on the button to access our menu</p>
+
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                Get our Menu Here!!
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-submenu">
+                    <a class="test" tabindex="-1" href="#"><input type="checkbox" name="salad" value="salad">Salad <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#"><input type="checkbox" name="santa_fe" value="santa_fe">Santa Fe</a></li>
+                        <li><a tabindex="-1" href="#"><input type="checkbox" name="greek" value="greek">Greek </a></li>
+                        <li><a tabindex="-1" href="#"><input type="checkbox" name="asian" value="asian">Asian </a></li>
+                        <li><a tabindex="-1" href="#"><b>You might also want:</b></a></li>
+<li class="dropdown-submenu">
+                            <a class="test" href="#"><input type="checkbox" name="ranch" value="ranch">Dressing <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><input type="checkbox" name="italian" value="italian">Italian</a></li>
+                                <li><a href="#"><input type="checkbox" name="blue_cheese" value="blue_cheese">Blue cheese</a></li>
+                                <li><a href="#"><input type="checkbox" name="ranch" value="ranch">Ranch</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="test" href="#"><input type="checkbox" name="ranch" value="ranch">Bread <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><input type="checkbox" name="italian" value="italian">Italian</a></li>
+                                <li><a href="#"><input type="checkbox" name="flat" value="flat">Flat</a></li>
+                                <li><a href="#"><input type="checkbox" name="sourdough" value="sourdough">Sourdough</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                    <a class="test" tabindex="-1" href="#"><input type="checkbox" name="entree" value="entree">Entree <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#"><input type="checkbox" name="steak" value="steak">Steak</a></li>
+                        <li><a tabindex="-1" href="#"><input type="checkbox" name="salmon" value="salmon">Salmon </a></li>
+                        <li><a tabindex="-1" href="#"><input type="checkbox" name="rice" value="rice">Rice </a></li>
+                        <li><a tabindex="-1" href="#"><b>You might also want:</b></a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                    <a class="test" tabindex="-1" href="#"><input type="checkbox" name="soup" value="soup">Soup <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#"><input type="checkbox" name="minestrone" value="minestrone">Minestrone</a></li>
+                        <li><a tabindex="-1" href="#"><input type="checkbox" name="hot_sour" value="hot_sour">Hot and Sour </a></li>
+                        <li><a tabindex="-1" href="#"><input type="checkbox" name="miso" value="miso">Miso </a></li>
+                        <li><a tabindex="-1" href="#"><b>You might also want:</b></a></li>
+                        <li class="dropdown-submenu">
+                            <a class="test" href="#"><input type="checkbox" name="bread" value="bread">Bread <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><input type="checkbox" name="breadsticks" value="breadsticks">Breadsticks</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    @*import the jquer scripts and bootstrap.min.js*@
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    @*the function handdles the toggling between the
+    menu items on  click*@ 
+    <script src="~/js/multilevelmenu.js" type="text/javascript"></script>
+
+</body>
+</html>
+
